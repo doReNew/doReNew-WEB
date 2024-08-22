@@ -9,18 +9,28 @@
 
 <url>
   <loc>https://dorenew.tech/</loc>
-  <lastmod>2024-08-22T09:53:40+00:00</lastmod>
+  <lastmod>2024-08-22T21:07:16+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://dorenew.tech/en.html</loc>
-  <lastmod>2024-08-22T09:53:41+00:00</lastmod>
+  <loc>https://dorenew.tech/en/</loc>
+  <lastmod>2024-08-22T21:07:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dorenew.tech/fr-fr.html</loc>
-  <lastmod>2024-08-22T09:53:41+00:00</lastmod>
+  <loc>https://dorenew.tech/fr-fr/</loc>
+  <lastmod>2024-08-22T21:07:16+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dorenew.tech/en/about</loc>
+  <lastmod>2024-08-22T21:07:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dorenew.tech/fr-fr/about</loc>
+  <lastmod>2024-08-22T21:07:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
