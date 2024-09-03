@@ -1,35 +1,4 @@
-User-agent: Googlebot
-allow
-User-agent: googlebot-image
-allow
-User-agent: googlebot-mobile
-allow
-User-agent: MSNBot
-allow
-User-agent: Slurp
-allow
-User-agent: Teoma
-allow
-User-agent: Gigabot
-allow
-User-agent: Robozilla
-allow
-User-agent: Nutch
-allow
-User-agent: ia_archiver
-allow
-User-agent: baiduspider
-allow
-User-agent: naverbot
-allow
-User-agent: yeti
-allow
-User-agent: yahoo-mmcrawler
-allow
-User-agent: psbot
-allow
-User-agent: yahoo-blogs/v3.9
-allow
 User-agent: *
-allow
+Allow: /
+
 Sitemap: https://dorenew.tech/sitemap.xml
