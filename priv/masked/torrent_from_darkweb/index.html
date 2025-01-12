@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr-fr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spin 1.5s linear infinite;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+    <!-- Loading Spinner -->
+    <div id="loading" class="fixed inset-0 flex flex-col items-center justify-center bg-black z-50 fade-in">
+        <div class="w-16 h-16 border-4 border-gray-200 border-t-white rounded-full animate-spin-slow"></div>
+        <p class="mt-4 text-lg font-light">Loading PDF...</p>
+    </div>
+
+    <!-- PDF Viewer -->
+    <div id="pdfContainer" class="hidden flex flex-col h-screen p-4 fade-in">
+        <!-- PDF Canvas -->
+        <div class="flex-1 overflow-auto flex justify-center items-center">
+            <canvas id="pdfViewer" class="max-w-full"></canvas>
+        </div>
+
+        <!-- Controls -->
+        <div class="fixed bottom-0 left-0 right-0 bg-zinc-900/90 backdrop-blur-lg p-4 border-t border-zinc-800">
+            <div class="max-w-3xl mx-auto flex items-center justify-between gap-4">
+                <!-- Navigation Controls -->
+                <button id="firstPage" class="hidden md:block text-white hover:text-gray-300 transition-colors">
+                    <i class="fas fa-fast-backward"></i>
+                </button>
+                <button id="prevPage" class="text-white hover:text-gray-300 transition-colors">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <!-- Page Controls -->
+                <div class="flex items-center gap-2">
+                    <input type="number" id="currentPage" class="w-16 bg-zinc-800 border border-zinc-700 rounded-lg px-2 py-1 text-center text-white" value="1">
+                    <span class="text-zinc-400">of</span>
+                    <span id="pageCount" class="text-zinc-400">1</span>
+                </div>
+
+                <button id="nextPage" class="text-white hover:text-gray-300 transition-colors">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button id="lastPage" class="hidden md:block text-white hover:text-gray-300 transition-colors">
+                    <i class="fas fa-fast-forward"></i>
+                </button>
+
+                <!-- Zoom Controls (Desktop Only) -->
+                <div class="hidden md:flex items-center gap-2">
+                    <button id="zoomOut" class="text-white hover:text-gray-300 transition-colors">
+                        <i class="fas fa-search-minus"></i>
+                    </button>
+                    <button id="zoomIn" class="text-white hover:text-gray-300 transition-colors">
+                        <i class="fas fa-search-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // PDF.js initialization
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+        const pdfUrl = 'https://raw.githubusercontent.com/RedFlyHD/temp-rss/main/ebooktemp.pdf';
+        let pdfDoc = null;
+        let pageNum = 1;
+        let scale = 1.0;
+        const canvas = document.getElementById('pdfViewer');
+        const ctx = canvas.getContext('2d');
+
+        // Load PDF
+        pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
+            pdfDoc = pdf;
+            document.getElementById('pageCount').textContent = pdf.numPages;
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('pdfContainer').classList.remove('hidden');
+            renderPage(pageNum);
+        });
+
+        function renderPage(num) {
+            pdfDoc.getPage(num).then(page => {
+                const viewport = page.getViewport({ scale });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+
+                page.render(renderContext);
+            });
+        }
+
+        // Event Listeners
+        document.getElementById('prevPage').addEventListener('click', () => {
+            if (pageNum <= 1) return;
+            pageNum--;
+            document.getElementById('currentPage').value = pageNum;
+            renderPage(pageNum);
+        });
+
+        document.getElementById('nextPage').addEventListener('click', () => {
+            if (pageNum >= pdfDoc.numPages) return;
+            pageNum++;
+            document.getElementById('currentPage').value = pageNum;
+            renderPage(pageNum);
+        });
+
+        document.getElementById('firstPage').addEventListener('click', () => {
+            pageNum = 1;
+            document.getElementById('currentPage').value = pageNum;
+            renderPage(pageNum);
+        });
+
+        document.getElementById('lastPage').addEventListener('click', () => {
+            pageNum = pdfDoc.numPages;
+            document.getElementById('currentPage').value = pageNum;
+            renderPage(pageNum);
+        });
+
+        document.getElementById('currentPage').addEventListener('change', (e) => {
+            const newPage = parseInt(e.target.value);
+            if (newPage > 0 && newPage <= pdfDoc.numPages) {
+                pageNum = newPage;
+                renderPage(pageNum);
+            }
+        });
+
+        // Zoom controls (desktop only)
+        document.getElementById('zoomIn').addEventListener('click', () => {
+            scale += 0.1;
+            renderPage(pageNum);
+        });
+
+        document.getElementById('zoomOut').addEventListener('click', () => {
+            if (scale <= 0.2) return;
+            scale -= 0.1;
+            renderPage(pageNum);
+        });
+    </script>
+</body>
+</html></button></div></button></div>
