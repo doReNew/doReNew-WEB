@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TLFZXFH2C4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TLFZXFH2C4');
+</script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W2WGZKP7');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <title>🍃 Breeze - Préversion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <html data-theme="dark"></html>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/rippleui@1.12.1/dist/css/styles.css"
+/>
+  <link href="output.css" rel="stylesheet">
+
+
+
+
+   <script>
+    function changeUrl() {
+    var site = "Pages/Home.html";
+    document.getElementsByName('Window')[0].src = site;
+}
+    </script>
+
+<script>
+  function Ebooks() {
+  var site = "Pages/Ebooks.html";
+  document.getElementsByName('Window')[0].src = site;
+}
+  </script>
+
+<script>
+  function ToolsNumworks() {
+  var site = "Pages/tools/Numworks.html";
+  document.getElementsByName('Window')[0].src = site;
+}
+  </script>
+<script>
+  function ToolsClock() {
+  var site = "Pages/Tools/Clock/index.html";
+  document.getElementsByName('Window')[0].src = site;
+}
+  </script>
+
+<script>
+  function News() {
+  var site = "Pages/news.html";
+  document.getElementsByName('Window')[0].src = site;
+}
+  </script>
+
+
+
+
+
+
+
+
+<body onload="openModal('modelConfirm')">
+
+  <div id="modelConfirm" class="fixed hidden z-50 inset-0 backdrop-blur-sm overflow-y-auto h-full w-full px-4 ">
+    <div class="relative top-40 mx-auto shadow-xl rounded-2xl bg-white max-w-xl">
+
+
+        <div class="p-6 pt-0 text-center">
+            <svg class="w-20 h-20 text-red-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h3 class="text-2xl font-normal text-gray-500 mt-5 mb-4">Breeze est toujours en développement</h3>
+            <h3 class="text-base font-normal text-gray-500 mt-5 mb-6">il est donc possible que certaines fonctionnalités soient indisponibles. </h3>
+            <button onclick="closeModal('modelConfirm')"
+                class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-base inline-flex items-center px-3 py-2.5 text-center mr-2">
+                Accéder à Breeze
+            </button>
+        </div>
+ 
+    </div>
+ </div>
+ 
+ <script type="text/javascript">
+    window.openModal = function(modalId) {
+        document.getElementById(modalId).style.display = 'block'
+        document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden')
+    }
+ 
+    window.closeModal = function(modalId) {
+        document.getElementById(modalId).style.display = 'none'
+        document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
+    }
+ 
+    // Close all modals when press ESC
+    document.onkeydown = function(event) {
+        event = event || window.event;
+        if (event.keyCode === 27) {
+            document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
+            let modals = document.getElementsByClassName('modal');
+            Array.prototype.slice.call(modals).forEach(i => {
+                i.style.display = 'none'
+            })
+        }
+    };
+ </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2WGZKP7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="flex flex-row sm:gap-10">
+      <div class="sm:w-full sm:max-w-[15rem]">
+        <input type="checkbox" id="sidebar-mobile-fixed" class="sidebar-state" />
+        <label for="sidebar-mobile-fixed" class="sidebar-overlay"></label>
+        <aside class="sidebar sidebar-fixed-left sidebar-mobile h-full justify-start max-sm:fixed max-sm:-translate-x-full">
+          <section class="sidebar-title items-center p-4">
+
+            <svg class="transition ease-in-out hover:scale-110 duration-300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 670 670">
+              <defs>
+                <linearGradient id="linear-gradient" x1="0.159" y1="0.024" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#272727"/>
+                  <stop offset="1" stop-color="#141414"/>
+                </linearGradient>
+                <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#fff"/>
+                  <stop offset="1" stop-color="#b9b9b9"/>
+                </linearGradient>
+                <linearGradient id="linear-gradient-4" x1="0.503" y1="-0.003" x2="0.472" y2="0.656" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#00f68b"/>
+                  <stop offset="1" stop-color="#009c58"/>
+                </linearGradient>
+                <linearGradient id="linear-gradient-5" x1="0.5" x2="0.587" y2="0.735" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#00ff90"/>
+                  <stop offset="1" stop-color="#009c58"/>
+                </linearGradient>
+              </defs>
+              <g id="Groupe_1" data-name="Groupe 1" transform="translate(-177 -177)">
+                <rect id="Rectangle_9" data-name="Rectangle 9" width="670" height="670" rx="178" transform="translate(177 177)" fill="url(#linear-gradient)"/>
+                <rect id="Rectangle_5" data-name="Rectangle 5" width="106" height="218" rx="53" transform="translate(306 326)" fill="url(#linear-gradient-2)"/>
+                <rect id="Rectangle_10" data-name="Rectangle 10" width="106" height="218" rx="53" transform="translate(612 326)" fill="url(#linear-gradient-2)"/>
+                <rect id="Rectangle_7" data-name="Rectangle 7" width="50" height="153" rx="25" transform="translate(388.749 704.401) rotate(-60)" fill="url(#linear-gradient-4)"/>
+                <rect id="Rectangle_8" data-name="Rectangle 8" width="50" height="153" rx="25" transform="translate(610.25 661.099) rotate(60)" fill="url(#linear-gradient-5)"/>
+              </g>
+            </svg>
+              <div class="menu-item px-4 flex"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd1eRhhoUK3laYaUQ_cGnfNep62ihJM7ykdyRKLq6N7Y-Jl2w/viewform?usp=sf_link"
+              target="popup"
+              onclick="window.open('changelog/mininav.html','popup','width=600,height=750'); return false;">
+                <span>Breeze</span>
+                <span class="text-xs font-normal text-content2">Préversion</span>
+              </div>
+            </section>
+
+          <section class="sidebar-content">
+            <nav class="menu rounded-md">
+              <section class="menu-section px-4">
+                <span class="menu-title">A propos</span>
+                <ul class="menu-items">
+                  <li onclick="changeUrl()" class="menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-75" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                      <path d="M19 9.77806V16.2C19 17.8801 19 18.7202 18.673 19.3619C18.3854 19.9264 17.9265 20.3854 17.362 20.673C16.7202 21 15.8802 21 14.2 21H9.8C8.11984 21 7.27976 21 6.63803 20.673C6.07354 20.3854 5.6146 19.9264 5.32698 19.3619C5 18.7202 5 17.8801 5 16.2V9.7774M21 12L15.5668 5.96393C14.3311 4.59116 13.7133 3.90478 12.9856 3.65138C12.3466 3.42882 11.651 3.42887 11.0119 3.65153C10.2843 3.90503 9.66661 4.59151 8.43114 5.96446L3 12M14 12C14 13.1045 13.1046 14 12 14C10.8954 14 10 13.1045 10 12C10 10.8954 10.8954 9.99996 12 9.99996C13.1046 9.99996 14 10.8954 14 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    <span>Accueil</span>
+                  </li>
+
+                  <li onclick="News()" class="menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-75" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path d="M7 3V5M17 3V5M16 18V16.2C16 15.0799 16 14.5198 16.218 14.092C16.4097 13.7157 16.7157 13.4097 17.092 13.218C17.5198 13 18.0799 13 19.2 13H21L16 18ZM16 18H3M7 9H17M7 13L8 14L10 12M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g>
+                    </svg>
+                    <span>Notre Actualité</span>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="menu-1" class="menu-toggle" />
+                    <label class="menu-item justify-between" for="menu-1">
+                      <div class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-75" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path d="M18.1957 8.80413C18.9727 9.22817 19.4998 10.0526 19.4998 11.0001C19.4998 12.3808 18.3805 13.5001 16.9998 13.5001C16.0523 13.5001 15.2279 12.973 14.8039 12.196M18.1957 8.80413L20.9998 6.00006L15.9998 6.00006L13.9998 4.00006C12.8952 2.89549 11.1044 2.89549 9.99981 4.00006C8.89524 5.10463 8.89524 6.89549 9.99981 8.00006L11.9998 10.0001L11.9998 15.0001L14.8039 12.196M18.1957 8.80413L14.8039 12.196M8.99951 20.9998L6.99951 11.9998L10.4995 8.49976M2.99951 20.9998L14.9995 20.9998" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g>
+                        </svg>
+                        <span>Plus d'infos</span>
+                      </div>
+    
+                      <span class="menu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </label>
+    
+                    <div class="menu-item-collapse">
+                      <div class="min-h-0">
+                        <label class="menu-item ml-6">Qui sommes nous ? <span class="badge badge-flat-error">Bientôt</span> </label>
+                        <label class="menu-item ml-6">A propos<span class="badge badge-flat-error">Bientôt</span> </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+              <div class="divider my-0"></div>
+              <section class="menu-section px-4">
+                <span class="menu-title">Outils</span>
+                <ul class="menu-items">
+                  <li onclick="Ebooks()" class="menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="opacity-75" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 11H15M9 7H13M9 15H15M5 6.2V21L7.5 19L10 21L12 19L14 21L16.5 19L19 21V6.2C19 5.0799 19 4.51984 18.782 4.09202C18.5903 3.71569 18.2843 3.40973 17.908 3.21799C17.4802 3 16.9201 3 15.8 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    Manuels Numériques
+                    <span class="badge badge-flat-warning">BÊTA</span>
+                  </li>
+                  <li class="menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="opacity-75" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M8 9L11 12L8 15M13 15H16M7.2 20H16.8C17.9201 20 18.4802 20 18.908 19.782C19.2843 19.5903 19.5903 19.2843 19.782 18.908C20 18.4802 20 17.9201 20 16.8V7.2C20 6.0799 20 5.51984 19.782 5.09202C19.5903 4.71569 19.2843 4.40973 18.908 4.21799C18.4802 4 17.9201 4 16.8 4H7.2C6.0799 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    Tutoriels
+                    <span class="badge badge-flat-error">Bientôt</span>
+                  </li>
+                  <li class="menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="opacity-75" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12V7.2C5 6.0799 5 5.51984 5.21799 5.09202C5.40973 4.71569 5.71569 4.40973 6.09202 4.21799C6.51984 4 7.07989 4 8.2 4H15.8C16.9201 4 17.4802 4 17.908 4.21799C18.2843 4.40973 18.5903 4.71569 18.782 5.09202C19 5.51984 19 6.0799 19 7.2V12M3 12V16.8C3 17.9201 3 18.4802 3.21799 18.908C3.40973 19.2843 3.71569 19.5903 4.09202 19.782C4.51984 20 5.0799 20 6.2 20H17.8C18.9201 20 19.4802 20 19.908 19.782C20.2843 19.5903 20.5903 19.2843 20.782 18.908C21 18.4802 21 17.9201 21 16.8V12H17.3255C16.8363 12 16.5917 12 16.3615 12.0553C16.1575 12.1043 15.9624 12.1851 15.7834 12.2947C15.5816 12.4184 15.4086 12.5914 15.0627 12.9373L14.9373 13.0627C14.5914 13.4086 14.4184 13.5816 14.2166 13.7053C14.0376 13.8149 13.8425 13.8957 13.6385 13.9447C13.4083 14 13.1637 14 12.6745 14H11.3255C10.8363 14 10.5917 14 10.3615 13.9447C10.1575 13.8957 9.96237 13.8149 9.78343 13.7053C9.5816 13.5816 9.40864 13.4086 9.06274 13.0627L8.93726 12.9373C8.59135 12.5914 8.4184 12.4184 8.21657 12.2947C8.03763 12.1851 7.84254 12.1043 7.63846 12.0553C7.40829 12 7.1637 12 6.67452 12H3Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    Calendrier
+                    <span class="badge badge-flat-error">Bientôt</span>
+                  </li>
+                  <li class="menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="opacity-75" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M13 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.0799 21 8.2 21H9M13 3L19 9M13 3V7.4C13 7.96005 13 8.24008 13.109 8.45399C13.2049 8.64215 13.3578 8.79513 13.546 8.89101C13.7599 9 14.0399 9 14.6 9H19M19 9V11M15 15C13.3431 15 12 16.3431 12 18C12 19.6569 13.3431 21 15 21M19 21C20.6569 21 22 19.6569 22 18C22 16.3431 20.6569 15 19 15M15 18H19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    Partager un Fichier
+                    <span class="badge badge-flat-error">Bientôt</span>
+                  </li>
+                  <li class="menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="opacity-75" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 3V6.4C12 6.96005 12 7.24008 12.109 7.45399C12.2049 7.64215 12.3578 7.79513 12.546 7.89101C12.7599 8 13.0399 8 13.6 8H16M14 19C14 20.1046 13.1046 21 12 21C10.8954 21 10 20.1046 10 19M14 19C14 17.8954 13.1046 17 12 17M14 19H21M10 19C10 17.8954 10.8954 17 12 17M10 19H3M12 17V13M16 7.28127V11.4C16 11.9601 16 12.2401 15.891 12.454C15.7951 12.6422 15.6422 12.7951 15.454 12.891C15.2401 13 14.9601 13 14.4 13H9.6C9.03995 13 8.75992 13 8.54601 12.891C8.35785 12.7951 8.20487 12.6422 8.10899 12.454C8 12.2401 8 11.9601 8 11.4V4.6C8 4.03995 8 3.75992 8.10899 3.54601C8.20487 3.35785 8.35785 3.20487 8.54601 3.10899C8.75992 3 9.03995 3 9.6 3H11.8193C12.0703 3 12.1958 3 12.3136 3.02898C12.4179 3.05468 12.5175 3.09703 12.6084 3.15442C12.7109 3.21916 12.798 3.30959 12.9721 3.49045L15.5528 6.17172C15.718 6.34333 15.8005 6.42914 15.8596 6.52838C15.9119 6.61637 15.9504 6.71188 15.9737 6.81156C16 6.92398 16 7.04307 16 7.28127Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    Télécharger un Fichier
+                    <span class="badge badge-flat-error">Bientôt</span>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="menu-2" class="menu-toggle" />
+                    <label class="menu-item justify-between" for="menu-2">
+                      <div class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="opacity-75" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M17.4 10L21 12L17.4 14M17.4 10L12 13L6.6 10M17.4 10L21 8L12 3L3 8L6.6 10M6.6 10L3 12L6.6 14M17.4 14L21 16L12 21L3 16L6.6 14M17.4 14L12 17L6.6 14" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <span>Plus d'outils</span>
+                      </div>
+    
+                      <span class="menu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </label>
+
+                    <div class="menu-item-collapse">
+                      <div class="min-h-0">
+                        <label onclick="ToolsNumworks()" class="menu-item ml-6">Émulateur Numworks</label>
+                        <label onclick="ToolsClock()" class="menu-item ml-6">Progression de l'année</label>
+                      </div>
+                    </div>
+                  </li>
+                  <div class="alert alert-warning menu-item">
+                    <div class="flex flex-col">
+                      <span class="text-content2 "
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd1eRhhoUK3laYaUQ_cGnfNep62ihJM7ykdyRKLq6N7Y-Jl2w/viewform?usp=sf_link"
+                      target="popup"
+                      onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd1eRhhoUK3laYaUQ_cGnfNep62ihJM7ykdyRKLq6N7Y-Jl2w/viewform?usp=sf_link','popup','width=600,height=665'); return false;"
+                      >Vous testez actuellement une version en développement de Breeze, merci de rapporter les erreurs en cliquant ici</span>
+
+                    </div>
+                  </div>
+                </ul>
+              </section>
+              <div class=" text-xs text-center ">VPré 24.2.7.0</div>
+            </nav>
+          </section>
+        </aside>
+      </div>
+      <div class="flex w-full flex-col ">
+        <div class="w-fit">
+          <label for="sidebar-mobile-fixed" class="btn-ghost btn  sm:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-75" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+              <path d="M3 10H16M3 14H21M3 18H16M3 6H21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+          </label>
+        </div>
+
+        <div class="h-dvh w-full">
+            <iframe src="Pages\Home.html" class="h-svh w-full" name="Window">
+
+            </iframe>
+        </div>
+      </div>
+    </div>
+</body>
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TLFZXFH2C4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TLFZXFH2C4');
+</script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W2WGZKP7');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <title>🍃 Breeze 24 - Préversion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="output.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/rippleui@1.12.1/dist/css/styles.css"
+/>
+
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="header">
+	<h1 class="header__title">Progression / <span id="year_num"></span></h1>
+</header>
+<div class="day_night" id="day_night">
+</div>
+<main class="main" id="main">
+	<div class="year_progress grid-item">
+		<p>Année: <span id="yp_text"></span></p>
+		<div class="bar">
+			<div id="yp_bar"></div>
+		</div>
+	</div>
+	<div class="month_progress grid-item">
+		<p>Mois: <span id="mp_text"></span></p>
+		<div class="bar">
+			<div id="mp_bar"></div>
+		</div>
+	</div>
+	<div class="day_progress grid-item">
+		<p>Journée: <span id="dp_text"></span></p>
+		<div class="bar">
+			<div id="dp_bar"></div>
+		</div>
+	</div>
+	<div class="hour_progress grid-item">
+		<p>Heure: <span id="hp_text"></span></p>
+		<div class="bar">
+			<div id="hp_bar"></div>
+		</div>
+	</div>
+	<div class="days">
+		<p>365 Jours:</p>
+		<div class="days_cont" id="days_cont"></div>
+	</div>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
+
+
